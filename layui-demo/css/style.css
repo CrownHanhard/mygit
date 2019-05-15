@@ -1,0 +1,279 @@
+/* 通用样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.maxwidth1000 {
+    width: 1000px !important;
+    margin: 0 auto;
+}
+
+/* 头部 */
+
+.header {
+    height: 120px;
+    line-height: 120px;
+    position: relative;
+    font-size: 16px;
+    display: flex;
+}
+
+.header .logo {
+    background: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 0px;
+    line-height: 120px;
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    left: 65px;
+}
+
+/* #1 */
+
+
+
+.menu-btn{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+.menu{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+.menu:before, .menu:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 6px;
+    background: #ff7f21;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+.menu:before, .menu:after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 6px;
+    background: #ff7f21;
+    border-radius: 8px;
+    position: absolute;
+    left: 0;
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+}
+.menu:after {
+    bottom: 17px;
+}
+.menu:before {
+    top: 0px;
+    box-shadow: 0 34px #ff7f21;
+}
+/* 隐藏按钮 */
+.header_nav {
+    background: white;
+    color: black;
+    position: absolute;
+    left: 200px;
+    display: block;
+}
+
+.header_nav li {
+    margin: 0 46px;
+    /*变化*/
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.layui-this {
+    color: orange;
+}
+
+/* #2 */
+
+.aside {
+    margin-left: 100px;
+    position: absolute;
+    right: 50px;
+    display: block;
+}
+
+/* 轮播 */
+
+.banner {
+    height: 600px;
+    width: 100%;
+    background: url(../img/banner.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.banner_content {
+    margin: 0 auto;
+    height: 600px;
+}
+
+.banner_title {
+    position: absolute;
+    top: 140px;
+    font-size: 40px;
+    color: white;
+}
+
+.banner_aside {
+    position: absolute;
+    top: 300px;
+    right: 200px;
+}
+
+.banner_aside .banner_aside_content {
+    color: orangered;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.banner_aside .banner_aside_content p {
+    margin: 20px 0;
+}
+
+.banner_aside_text {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    text-align: left;
+}
+
+.banner_aside_text::after {
+    position: absolute;
+    right: -5px;
+    content: '\FF1A';
+}
+
+/* 内容区域 */
+
+.content {
+    height: auto;
+}
+
+.content_nav {
+    padding-top: 100px;
+    margin-bottom: 60px;
+}
+
+.content_nav span a {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.content_nav span a cite {
+    color: orange;
+}
+
+.item-pic {
+   padding: 0 10px;
+}
+
+.item-pic img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    border: 0;
+}
+
+.item-content {
+    padding-left: 70px;
+    margin-bottom: 80px;
+}
+
+.item-content h1 {
+    font-size: 26px;
+    line-height: 26px;
+    height: 26px;
+    margin: 20px 0;
+}
+
+.item-content .item-icon {
+    vertical-align: middle;
+    outline: none;
+    border: 0;
+    width: 36px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    cursor: pointer;
+    margin: -1px 0 0 10px;
+}
+
+.item-content h5 {
+    color: orangered;
+    margin-bottom: 30px;
+}
+
+.item-intro p {
+    line-height: 37px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+.item-intro .go_icon{
+    width: 33px;
+    height: 11px;
+    background: url(../img/jiantou.png) center center no-repeat;
+    display: block;
+    padding: 10px 0;
+    margin-top: 16px;
+}
+/* 分页 */
+.page_controller{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+#item-page{
+    display: inline-block;
+}
+/* 页脚 */
+.footer{
+border-top: 1px solid #000;
+padding: 80px 0;
+}
+.footer_content{
+    margin: 0 auto;
+    display: flex;
+}
+.footer-item{
+    flex:1;
+    display: flex;
+}
+.footer-item img{
+    margin-left: 160px;
+    }
+.footer-detail{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.footer-detail div{
+    flex: 1;
+    vertical-align: middle;
+}
+.detail-title{
+    font-size: 20px;
+}
+.detail-num{
+    margin-left: 20px;
+}
